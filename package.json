@@ -1,0 +1,21 @@
+{
+  "name": "movie-app",
+  "version": "1.0.0",
+  "description": "movie-app using the movie DB api",
+  "main": "App.js",
+  "dependencies": {
+    "parcel": "^2.0.0-beta.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "",
+    "dev": "parcel index.html",
+    "watch": "parcel build index.html --dist-dir ./dist"
+  },
+  "keywords": [
+    "movie",
+    "app"
+  ],
+  "author": "Marlon P",
+  "license": "ISC"
+}
