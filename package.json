@@ -6,7 +6,9 @@
   "dependencies": {
     "parcel": "^2.0.0-beta.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-beta.2"
+  },
   "scripts": {
     "build": "",
     "dev": "parcel index.html",
