@@ -1,0 +1,14 @@
+.main-card {
+    background-color: var(--primary);
+    overflow: hidden;
+    border-radius: .8rem;
+    max-width: 30rem;
+    width: calc(25%);
+    margin: 2rem;
+
+    &-image {
+        img {
+            display: block;
+        }
+    }
+}

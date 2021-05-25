@@ -1,0 +1,125 @@
+@use './mixins/mixins';
+
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px 10px/16px = 62.5%; convert back -> 0.625 * 16 = 10 
+  
+    // @media only screen and (max-width: $bp-medium) {
+    //   font-size: 50%;
+    // }
+}
+
+body {
+    @include mixins.custom-scrollbar;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+}
+  
+ol, ul {
+    list-style: none;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+::placeholder {
+    color: var(--white-text);
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+
+// ICONS BASIC STYLES
+
+.icon-container {
+    height: var(--icon-size);
+    width: var(--icon-size);
+    background-color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &.animated {
+        transition: .3s all ease-in;
+        &:hover {
+            background-color: var(--primary-light);
+        }
+    }
+
+    &.small {
+        --icon-size: 2.6rem;
+        height: var(--icon-size);
+        width: var(--icon-size);
+        background-color: var(--secondary-light);
+    }
+}
+
+.icon-element {
+    color: var(--white-elements);
+}
+
+
+// BUTTON
+
+.btn {
+    color: var(--white-text);
+    background-color: var(--primary);
+    padding: 1rem 3rem;
+    text-align: center;
+    border-radius: 50rem;
+    border: none;
+    font-weight: 600;
+    height: 4rem;
+    cursor: pointer;
+    // transform: translateY(0);
+
+    transition: all .3s ease-in;
+
+    &-icon {
+        margin-right: .5rem;
+    }
+
+    &:hover {
+        background-color: var(--primary-light);
+    }
+
+    &:active {
+        transition: all .1s ease-in;
+        transform: translateY(-4px);
+        
+    }
+
+    &:focus {
+        transition: all .1s ease-in;
+        background-color: var(--primary-dark);
+    }
+}
+
+// PRELOAD 
+
+.preload * {
+    transition: none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}

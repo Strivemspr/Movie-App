@@ -2,17 +2,31 @@
   "name": "movie-app",
   "version": "1.0.0",
   "description": "movie-app using the movie DB api",
-  "main": "App.js",
+  "private": true,
   "dependencies": {
-    "parcel": "^2.0.0-beta.2"
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.0-beta.2"
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^5.2.5",
+    "css-minimizer-webpack-plugin": "^3.0.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "optimize-css-assets-webpack-plugin": "^6.0.0",
+    "sass": "^1.33.0",
+    "sass-loader": "^11.1.1",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.1.2",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
   },
   "scripts": {
-    "build": "",
-    "dev": "parcel index.html",
-    "watch": "parcel build index.html --dist-dir ./dist"
+    "start": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "keywords": [
     "movie",
