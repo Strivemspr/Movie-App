@@ -5,7 +5,9 @@
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
-    "@fortawesome/fontawesome-svg-core": "^1.2.35"
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@splidejs/splide": "^2.4.21",
+    "dotenv": "^10.0.0"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0-alpha.0",

@@ -1,7 +1,7 @@
 :root {
     //Colors
     --primary: #CB134A;
-    --primary-light: #f11e5d;
+    --primary-light: #ff3673;
     --primary-dark: #b30f40;
     --secondary: #303F58;
     --secondary-light: #5C697E;
@@ -13,10 +13,22 @@
     --shadow: 0, 0, 0;
     --shadow-opacity: 0.3;
 
+    // Slider
+    --amount: 5;
+    --slide-size: 60px;
+    --slide-padding: 5px;
+    --splide-padding: 20px;
+
     // Sizes
     --header-height: 10rem;
     --icon-size: 4rem;
-
-    // Media Queries
-    
 }
+
+// Media Queries
+$wide: 1680px;
+$extra-large: 1480px;
+$large: 1280px;
+$extra-medium: 1050px;
+$medium: 960px;
+$small: 720px;
+$extra-small: 600px;

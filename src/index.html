@@ -5,12 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/splide.min.css">
     <title>Document</title>
 </head>
 <body class="preload">
+
+    <!-- MODAL -->
+    <div class="modal"></div>
+
+    <!-- CLOSE-ICON -->
+    <div class="close-icon icon-container animated">
+        <i class="fas fa-times icon-element fa-lg"></i>
+    </div>
+
     <!-- HEADER -->
     <main class="main">
-        <!-- FIXED SIDEBAR -->
+        <!-- FIXED LEFT SIDEBAR -->
         <section class="sidebar">
             <!-- LOGO -->
             <div class="sidebar-logo">
@@ -23,151 +33,119 @@
                 <section class="sidebar-menu-discover">
                     <h3>Discover</h3>
                     <ul class="menu-discover">
-                        <li class="menu-link active">
+                        <li class="menu-link active" data-link='popular'>
                             <div class="icon-container small"><i class="fas fa-heart fa-xs icon-element"></i></div>
                             <a href="#">Popular</a>
                         </li>
-                        <li class="menu-link">
+                        <li class="menu-link" data-link='top_rated'>
                             <div class="icon-container small"><i class="fas fa-star fa-xs icon-element"></i></div>
                             <a href="#">Top Rated</a>
                         </li>
-                        <li class="menu-link">
+                        <li class="menu-link" data-link='upcoming'>
                             <div class="icon-container small"><i class="fas fa-calendar fa-xs icon-element"></i></div>
                             <a href="#">Upcoming</a>
                         </li>
                     </ul>
                 </section>
-                <section class="sidebar-menu-genres">
+                <!-- <section class="sidebar-menu-genres">
                     <h3>Genres</h3>
                     <ul class="menu-genres">
                         <li class="menu-link">
                             <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
                             <a href="#">Genre Link</a>
                         </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
-                        <li class="menu-link">
-                            <div class="icon-container small"><i class="fas fa-caret-right fa-sm icon-element"></i></div>
-                            <a href="#">Genre Link</a>
-                        </li>
                     </ul>
-                </section>
+                </section> -->
                 
             </aside>
+        </section>
+
+        <!-- FIXED RIGHT SIDEBAR -->
+        <section class="sidebar-right">
+
+            <div class="text-container">
+                <h2>Watchlist</h2>
+                <h3>Favourite Movies</h3>
+            </div>
+        
+            <!-- MOVIE SIDEBAR CARD CONTAINER -->
+            <div class="watchlist-cards-container">
+                <!-- MOVIE SIDEBAR CARD -->
+                <a class="watchlist-card" href="#">
+                    <div class="watchlist-card-image">
+                        <img src="./img/movie1.jpg" alt="Watchlist Image">
+                    </div>
+                    <div class="watchlist-card-description">
+                        <h3>Mortal Kombat</h3>
+                        <label>Action/Fantasy</label>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque rem voluptatum blanditiis reprehenderit maiores, enim, fuga soluta ducimus asperiores nobis ut a, dolorem perferendis ea aperiam laudantium fugit sequi aut facilis quod deserunt eius nulla aspernatur sapiente. Temporibus maxime doloremque corporis inventore, dolorem harum, amet cum aut cumque libero repellat atque eligendi fuga alias dicta dignissimos.Desde Aqui empezamos a cortar Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque rem voluptatum blanditiis reprehenderit maiores, enim, fuga soluta ducimus asperiores nobis ut a, dolorem perferendis ea aperiam laudantium fugit sequi aut facilis quod deserunt eius nulla aspernatur sapiente. Temporibus maxime doloremque corporis inventore, dolorem harum, amet cum aut cumque libero repellat atque eligendi fuga alias dicta dignissimos.</p>
+                        <div class="watchlist-card-rating">6.2/10</div>
+                    </div>
+                    <div class="watchlist-card-icon icon-container animated">
+                        <i class="fas fa-heart icon-element fa-lg"></i>
+                    </div>
+                </a>
+    
+                <a class="watchlist-card" href="#">
+                    <div class="watchlist-card-image">
+                        <img src="./img/movie2.jpg" alt="Watchlist Image">
+                    </div>
+                    <div class="watchlist-card-description">
+                        <h3>Mortal Kombat</h3>
+                        <label>Action/Fantasy</label>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque rem voluptatum blanditiis reprehenderit maiores, enim, fuga soluta ducimus asperiores nobis ut a, dolorem perferendis ea aperiam laudantium fugit sequi aut facilis quod deserunt eius nulla aspernatur sapiente. Temporibus maxime doloremque corporis inventore, dolorem harum, amet cum aut cumque libero repellat atque eligendi fuga alias dicta dignissimos.</p>
+                        <div class="watchlist-card-rating">6.2/10</div>
+                    </div>
+                    <div class="watchlist-card-icon icon-container animated">
+                        <i class="fas fa-heart icon-element fa-lg"></i>
+                    </div>
+                </a>
+    
+                <a class="watchlist-card" href="#">
+                    <div class="watchlist-card-image">
+                        <img src="./img/movie3.jpg" alt="Watchlist Image">
+                    </div>
+                    <div class="watchlist-card-description">
+                        <h3>Mortal Kombat</h3>
+                        <label>Action/Fantasy</label>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque rem voluptatum blanditiis reprehenderit maiores, enim, fuga soluta ducimus asperiores nobis ut a, dolorem perferendis ea aperiam laudantium fugit sequi aut facilis quod deserunt eius nulla aspernatur sapiente. Temporibus maxime doloremque corporis inventore, dolorem harum, amet cum aut cumque libero repellat atque eligendi fuga alias dicta dignissimos.</p>
+                        <div class="watchlist-card-rating">6.2/10</div>
+                    </div>
+                    <div class="watchlist-card-icon icon-container animated">
+                        <i class="fas fa-heart icon-element fa-lg"></i>
+                    </div>
+                </a>
+    
+                <a class="watchlist-card" href="#">
+                    <div class="watchlist-card-image">
+                        <img src="./img/movie4.jpg" alt="Watchlist Image">
+                    </div>
+                    <div class="watchlist-card-description">
+                        <h3>Mortal Kombat</h3>
+                        <label>Action/Fantasy</label>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque rem voluptatum blanditiis reprehenderit maiores, enim, fuga soluta ducimus asperiores nobis ut a, dolorem perferendis ea aperiam laudantium fugit sequi aut facilis quod deserunt eius nulla aspernatur sapiente. Temporibus maxime doloremque corporis inventore, dolorem harum, amet cum aut cumque libero repellat atque eligendi fuga alias dicta dignissimos.</p>
+                        <div class="watchlist-card-rating">6.2/10</div>
+                    </div>
+                    <div class="watchlist-card-icon icon-container animated">
+                        <i class="fas fa-heart icon-element fa-lg"></i>
+                    </div>
+                </a>
+    
+                <a class="watchlist-card" href="#">
+                    <div class="watchlist-card-image">
+                        <img src="./img/movie5.jpg" alt="Watchlist Image">
+                    </div>
+                    <div class="watchlist-card-description">
+                        <h3>Mortal Kombat</h3>
+                        <label>Action/Fantasy</label>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque rem voluptatum blanditiis reprehenderit maiores, enim, fuga soluta ducimus asperiores nobis ut a, dolorem perferendis ea aperiam laudantium fugit sequi aut facilis quod deserunt eius nulla aspernatur sapiente. Temporibus maxime doloremque corporis inventore, dolorem harum, amet cum aut cumque libero repellat atque eligendi fuga alias dicta dignissimos.</p>
+                        <div class="watchlist-card-rating">6.2/10</div>
+                    </div>
+                    <div class="watchlist-card-icon icon-container animated">
+                        <i class="fas fa-heart icon-element fa-lg"></i>
+                    </div>
+                </a>
+            </div>
         </section>
 
         <section class="content">
@@ -181,11 +159,17 @@
                 </div>
 
                 <div class="header-menu">
-                    <div class="icon-container animated">
+                    <div class="icon-container animated menu-btn-theme">
                         <i class="fas fa-moon icon-element fa-lg"></i>
                     </div>
+                    <div class="icon-container animated menu-btn-sidebar">
+                        <i class="fas fa-bars icon-element fa-lg"></i>
+                    </div>
+                    <div class="icon-container animated menu-btn-watchlist">
+                        <i class="fas fa-video icon-element fa-lg"></i>
+                    </div>
                     <button class="btn">
-                        <i class="fas fa-video btn-icon"></i>
+                        <i class="fas fa-video btn-icon-right"></i>
                         My Watchlist
                     </button>
                 </div>
@@ -193,121 +177,109 @@
 
             <!-- MOVIES SECTION -->
             <section class="movies">
-                <div class="movies-title">
+
+                <!-- LOADER -->
+                <!-- <div class="loader">
+                    <img src="./img/logo.svg" alt="Loader Image">
+                </div> -->
+
+                <!-- MOVIE TITLE -->
+                <!-- <div class="text-container">
                     <h2 class="">Popular</h2>
                     <h3>Movies</h3>
-                </div>
+                </div> -->
 
                 <!-- MOVIE CARD CONTAINER -->
-                <div class="movies-container">
+                <!-- <div class="movies-container"> -->
 
                     <!-- MOVIE CARD -->
-                    <div class="main-card">
-                        <div class="main-card-image">
-                            <img src="./img/movie1.jpg" alt="Movie">
+                    <!-- <div class="main-card">
+                        <a href="#">
+                            <div class="main-card-image">
+                                <img src="./img/movie1.jpg" alt="Movie">
+                            </div>
+                            <div class="main-card-text">
+                                <h3>Mortal Kombat</h3>
+                                <p>Action/Fantasy</p>
+                            </div>
+                        </a>
+                        <div class="main-card-top-container">
+                            <div class="main-card-rating">6.2/10</div>
+                            <div class="main-card-icon icon-container animated">
+                                <i class="far fa-heart icon-element fa-lg"></i>
+                            </div>
                         </div>
-                        <div class="main-card-text">
-                            <h3>Mortal Kombat</h3>
-                            <p>Action/Fantasy</p>
-                        </div>
-                    </div>
+                    </div> -->
 
-                    <div class="main-card">
-                        <div class="main-card-image">
-                            <img src="./img/movie2.jpg" alt="Movie">
-                        </div>
-                        <div class="main-card-text">
-                            <h3>Mortal Kombat</h3>
-                            <p>Action/Fantasy</p>
-                        </div>
-                    </div>
-
-                    <div class="main-card">
-                        <div class="main-card-image">
-                            <img src="./img/movie3.jpg" alt="Movie">
-                        </div>
-                        <div class="main-card-text">
-                            <h3>Mortal Kombat</h3>
-                            <p>Action/Fantasy</p>
-                        </div>
-                    </div>
-
-                    <div class="main-card">
-                        <div class="main-card-image">
-                            <img src="./img/movie4.jpg" alt="Movie">
-                        </div>
-                        <div class="main-card-text">
-                            <h3>Mortal Kombat</h3>
-                            <p>Action/Fantasy</p>
-                        </div>
-                    </div>
-
-                    <div class="main-card">
-                        <div class="main-card-image">
-                            <img src="./img/movie5.jpg" alt="Movie">
-                        </div>
-                        <div class="main-card-text">
-                            <h3>Mortal Kombat</h3>
-                            <p>Action/Fantasy</p>
-                        </div>
-                    </div>
-
-                    <div class="main-card">
-                        <div class="main-card-image">
-                            <img src="./img/movie6.jpg" alt="Movie">
-                        </div>
-                        <div class="main-card-text">
-                            <h3>Mortal Kombat</h3>
-                            <p>Action/Fantasy</p>
-                        </div>
-                    </div>
-
-                    <div class="main-card">
-                        <div class="main-card-image">
-                            <img src="./img/movie7.jpg" alt="Movie">
-                        </div>
-                        <div class="main-card-text">
-                            <h3>Mortal Kombat</h3>
-                            <p>Action/Fantasy</p>
-                        </div>
-                    </div>
-
-                    <div class="main-card">
-                        <div class="main-card-image">
-                            <img src="./img/movie7.jpg" alt="Movie">
-                        </div>
-                        <div class="main-card-text">
-                            <h3>Mortal Kombat</h3>
-                            <p>Action/Fantasy</p>
-                        </div>
-                    </div>
-
-                    <div class="main-card">
-                        <div class="main-card-image">
-                            <img src="./img/movie7.jpg" alt="Movie">
-                        </div>
-                        <div class="main-card-text">
-                            <h3>Mortal Kombat</h3>
-                            <p>Action/Fantasy</p>
-                        </div>
-                    </div>
-
-                    <div class="main-card">
-                        <div class="main-card-image">
-                            <img src="./img/movie8.jpg" alt="Movie">
-                        </div>
-                        <div class="main-card-text">
-                            <h3>Mortal Kombat</h3>
-                            <p>Action/Fantasy</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- MOVIE PAGINATION -->
-                <div class="movies-pagination">
-
-                </div>
             </section>
+                
+            <!-- MOVIE PAGINATION -->
+            <div class="movies-pagination">
+                <!-- <button class="btn btn--left">
+                    <i class="fas fa-caret-left btn-icon-right"></i>
+                    Page 1
+                </button>
+                <button class="btn btn--right">
+                    Page 3
+                    <i class="fas fa-caret-right btn-icon-left"></i>
+                </button> -->
+            </div>
+            <!-- SINGLE MOVIE CARD -->
+           <!-- <section class="single-movie-container">
+                <div class="single-movie-card">
+                    <div class="single-movie-card-image">
+                        <img src="./img/movie4.jpg" alt="Single Movie">
+                    </div>
+
+                    <div class="single-movie-card-description">
+                        <div class="single-movie-card-info">
+                            <div>
+                                <h2>Godzilla Vs. Kong</h2>
+                                <label>2021 • Action, Sci-Fi, Thriller</label>
+                            </div>
+                            <div class="single-card-icon icon-container animated">
+                                <i class="far fa-heart icon-element fa-lg"></i>
+                            </div>
+                        </div>
+                        <p>Kong and his protectors undertake a perilous journey to find his true home. Along for the ride is Jia, an orphaned girl who has a unique and powerful bond with the mighty beast. However, they soon find themselves in the path of an enraged Godzilla as he cuts a swath of destruction across the globe. The initial confrontation between the two titans, instigated by unseen forces is only the beginning of the mystery that lies deep within the core of the planet.</p> -->
+
+                        <!-- SPLIDE -->
+                        <!-- <div class="splide">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide"><a href="#"><img src="./img/actor.jpg" alt="Actor"></a></li>
+                                    <li class="splide__slide"><a href="#"><img src="./img/actor.jpg" alt="Actor"></a></li>
+                                    <li class="splide__slide"><a href="#"><img src="./img/actor.jpg" alt="Actor"></a></li>
+                                    <li class="splide__slide"><a href="#"><img src="./img/actor.jpg" alt="Actor"></a></li>
+                                    <li class="splide__slide"><a href="#"><img src="./img/actor.jpg" alt="Actor"></a></li>
+                                    <li class="splide__slide"><a href="#"><img src="./img/actor.jpg" alt="Actor"></a></li>
+                                    <li class="splide__slide"><a href="#"><img src="./img/actor.jpg" alt="Actor"></a></li>
+                                    <li class="splide__slide"><a href="#"><img src="./img/actor.jpg" alt="Actor"></a></li>
+                                    <li class="splide__slide"><a href="#"><img src="./img/actor.jpg" alt="Actor"></a></li>
+                                    <li class="splide__slide"><a href="#"><img src="./img/actor.jpg" alt="Actor"></a></li>
+                                    <li class="splide__slide"><a href="#"><img src="./img/actor.jpg" alt="Actor"></a></li>
+                                    <li class="splide__slide"><a href="#"><img src="./img/actor.jpg" alt="Actor"></a></li>
+                                    <li class="splide__slide"><a href="#"><img src="./img/actor.jpg" alt="Actor"></a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+
+                        <!-- BUTTONS -->
+                        <!-- <button class="btn">
+                            Website
+                            <i class="fas fa-external-link-alt"></i>
+                        </button>
+                        <button class="btn">
+                            IMDB
+                            <i class="fab fa-imdb"></i>
+                        </button>
+                        <button class="btn">
+                            Trailer
+                            <i class="fas fa-video btn-icon-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </section> -->
         </section>
     </main>
 </body>

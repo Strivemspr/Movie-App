@@ -6,7 +6,7 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const { merge } = require('webpack-merge');
 const path = require('path');
 
-module.exports = merge(common, {
+module.exports = merge(common(), {
     mode: 'production',
     devtool: 'inline-source-map',
     output: {

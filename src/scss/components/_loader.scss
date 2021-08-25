@@ -1,0 +1,23 @@
+.loader {
+    display: flex;
+    padding: 10rem 0;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 10rem;
+        height: 10rem;
+        animation: loader-animation 1s ease-out forwards infinite;
+        display: block;
+    };
+}
+
+@keyframes loader-animation {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
